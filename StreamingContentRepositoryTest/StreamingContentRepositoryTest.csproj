@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D1C908B-BFDE-45BA-9084-542169D1765E}</ProjectGuid>
+    <ProjectGuid>{74D6207A-6C60-4B1B-9925-90046D326836}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MorningChallenges</RootNamespace>
-    <AssemblyName>MorningChallenges</AssemblyName>
+    <RootNamespace>StreamingContentRepositoryTest</RootNamespace>
+    <AssemblyName>StreamingContentRepositoryTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,13 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="ChallengeLoops.cs" />
-    <Compile Include="InheritanceChallenge.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepositoryPattems\RepositoryPattems.csproj">
+      <Project>{d258b98e-6926-48df-b5b5-cf870999baf4}</Project>
+      <Name>RepositoryPattems</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

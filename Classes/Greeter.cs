@@ -25,6 +25,7 @@ namespace Classes
             int randomNumber = _random.Next(0, availableGreetings.Length);
             //element matches the number to the greeting
             string randomGreeting = availableGreetings.ElementAt(randomNumber);
+            
             Console.WriteLine($"{Random.Greeting}");
         }
     }
