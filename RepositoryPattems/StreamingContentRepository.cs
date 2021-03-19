@@ -30,7 +30,7 @@ namespace RepositoryPattems
         }
         //get contents of list
         //2.Read
-        public List<StreamingContent> GetContents()
+        public List<StreamingContent> GetContent()
         {
             return _contentDirectory;
         }
